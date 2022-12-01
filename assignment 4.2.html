@@ -1,0 +1,58 @@
+
+<!-- write and submit code to set up a handler for a focus-event on an input element having id name which is a direct of an child of an element having id john.
+when run, the handler should add the html class shape to all elements having a html class of important which are direct children of an element having id john
+the event should not propagate beyond the handler -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+
+        <style>
+            .shape{
+
+                border: 2px solid red;
+
+}
+
+            .important{
+
+                background: yellow;
+}
+
+
+        </style>
+
+        <body>
+
+            <div id="john">
+                Enter your name: <input type="text" class="important" id="name" onfocus="myFunction(this)">
+
+                    <p>When the input field gets focus, a function changes the background-color.</p>
+
+                    <p class="important">This is the test area to apply for shape and important</p>
+
+                    <p class="important">This is the test area to apply for shape and important-2</p>
+
+            </div>
+            <script>
+                function myFunction(x) {
+
+                    document.querySelectorAll('#john > .important').forEach((el) => {
+                        el.classList.add('shape');
+                    });
+
+
+
+}
+            </script>
+
+        </body>
+    </html>
+
