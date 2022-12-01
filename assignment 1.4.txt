@@ -1,4 +1,4 @@
-2.Explain jwt in approx and prove its top 3 benefits.
+Explain jwt in approx and prove its top 3 benefits.
 
 - A JSON web token is JSON Object which is used to securely transfer information over the web.
 - A JWT is a self-contained method that can be used securely transmit data between two endpoints. 
